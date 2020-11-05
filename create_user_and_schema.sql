@@ -10,4 +10,5 @@ GO
 CREATE USER [zharynin] FOR LOGIN [zharynin] WITH DEFAULT_SCHEMA=[zharynin_schema]
 GO
 EXEC sp_addrolemember N'db_owner', N'zharynin'
+EXEC sp_addrolemember N'xlargerc', N'zharynin'
 GO
