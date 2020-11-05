@@ -4,7 +4,7 @@ DROP TABLE zharynin_schema.fact_tripdata
 GO
 CREATE TABLE zharynin_schema.fact_tripdata
 WITH (  CLUSTERED COLUMNSTORE INDEX
-     ,  DISTRIBUTION =  HASH([Payment_type])
+     ,  DISTRIBUTION =  HASH([DOLocationID])
     )
 AS
 SELECT  *
