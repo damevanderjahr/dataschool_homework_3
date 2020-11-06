@@ -44,14 +44,14 @@ CREATE EXTERNAL TABLE sqldwschool.zharynin_schema.table_ext_zharynin
   PULocationID          int      ,
   DOLocationID          int      ,
   payment_type          int      ,
-  fare_amount           float(24),
-  extra                 float(24),
-  mta_tax               float(24),
-  tip_amount            float(24),
-  tolls_amount          float(24),
-  improvement_surcharge float(24),
-  total_amount          float(24),
-  congestion_surcharge  float(24)
+  fare_amount           money,
+  extra                 money,
+  mta_tax               money,
+  tip_amount            money,
+  tolls_amount          money,
+  improvement_surcharge money,
+  total_amount          money,
+  congestion_surcharge  money
 )
   WITH (
     LOCATION = '/homework_3/yellow_tripdata_2020-01.csv',
